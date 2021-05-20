@@ -1,30 +1,25 @@
 # Post title
 
-**A non-mandatory subtitle**
+A non-mandatory subtitle
 
-Author: Johan S. Steinberg
-
-Tags: markdown, template
-
-Edited: 2021-05-18, 2021-05-19
+- Author: Johan S. Steinberg
+- Edited: 2021-05-18, 2021-05-19
+- Tags: markdown, template
+- Templates: default, slideshow
 
 An introduction or summary paragraph.
 
 ---
 
-Notice the horizontal rule. Now comes the rest of the content.
+Notice the horizontal rule? It separates the post header from the rest of the content---which is here.
 
 To further explain this template:
 
-- First there's the post title
-- Second, a subtitle can be added
-- Third, an author can be added
-- Fourth, tags can be added
-- Fifth, dates for when edited, starting with the creation date
-- Sixth, the introduction or summary.
+1. The post title.
+2. Subtitle can be added.
+3. A list of meta data. Each meta data item is a key and a value, or a list value as a comma seperated list.
+4. A paragraph for introduction or summary can be added.
 
-The post can end with an object/JSON for more metadata and/or configurations for an app:
+---
 
-{
-	slides: true,
-}
+Another horizontal rule to test any regex based on "---".

@@ -1,12 +1,10 @@
 # Innleggstittel
 
-**En frivillig undertittel**
+En frivillig undertittel
 
-Forfatter: Johan S. Steinberg
-
-Merkelapper: markdown, template
-
-Redigert: 2021-05-18, 2021-05-19
+- Forfatter: Johan S. Steinberg
+- Merkelapper: markdown, template
+- Redigert: 2021-05-18, 2021-05-19
 
 En innledning eller oppsummeringavsnitt.
 
