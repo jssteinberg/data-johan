@@ -4,16 +4,11 @@ En frivillig undertittel
 
 - Forfatter: Johan S. Steinberg
 - Merkelapper: markdown, template
-- Redigert: 2021-05-18, 2021-05-19
+- Redigert: 2021-05-18, 2021-05-21
+- Lang: nb
 
-En innledning eller oppsummeringavsnitt.
+Et utdrag, en innledning eller oppsummering, i et avsnitt.
 
 ---
 
-Legg merke til den horisontaleregelen. Nå kommer resten av innholdet.
-
-Innlegget kan ende med et objekt/JSON for ekstra metadata eller innstillinger for en applikasjon:
-
-{
-	slides: true,
-}
+Legg merke til den horisontaleregelen. Nedenfor den er hovedinnholdet.

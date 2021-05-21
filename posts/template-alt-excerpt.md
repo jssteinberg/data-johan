@@ -1,13 +1,11 @@
-# Post title
+# Alternative template with excerpt at top
 
-A non-mandatory subtitle
+This excerpt is at the top, or right below the title that is.
 
 - Author: Johan S. Steinberg
-- Edited: 2021-05-18, 2021-05-21
+- Edited: 2021-05-21
 - Tags: markdown, template
 - Templates: default, slideshow
-
-An excerpt, introduction, summary or lead paragraph. Call it what you want, but the API calls it an "excerpt".
 
 ---
 
@@ -22,4 +20,4 @@ To further explain this template:
 
 ---
 
-Another horizontal rule to test any regex based on "\n\n---\n\n" (`<hr>`).
+Another horizontal rule to test any regex based on "---".
