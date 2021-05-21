@@ -17,8 +17,8 @@ const getHtmlFromMarkdown = (markdownText) => {
 
 /** getObjectFromRawMarkdown(string) - return {} */
 const getObjectFromRawMarkdown = (markdownText = '') => {
-	const rawContentHeader = markdownText.match(/^([^]*?)(?=---)/)[0];
-	const rawContentBody = markdownText.match(/(?<=---)[^]+/)[0];
+	const markdownHeader = markdownText.match(/^([^]*?)(?=---)/)[0];
+	// const markdownBody = markdownText.match(/(?<=---)[^]+/)[0];
 	const fullHtml = getHtmlFromMarkdown(markdownText);
 	const dom = new JSDOM(fullHtml);
 	// Get relevant nodes
@@ -30,7 +30,7 @@ const getObjectFromRawMarkdown = (markdownText = '') => {
 	const bodyNodes = parentNodes.filter((x,i) => i > sepIndex);
 
 	// get meta data based on being a markdown list item
-	const metaData = rawContentHeader.
+	const metaData = markdownHeader.
 		split('\n').
 		filter(x => x.match(/^\s*-\s*.+:\s*.+/)).
 		map(mdLi => {
