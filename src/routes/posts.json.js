@@ -40,18 +40,22 @@ const getObjectFromRawMarkdown = (markdownText = '') => {
 			return res;
 		});
 
+	const getTitleAdjacentNodeNotUl = () => {
+		return (
+			typeof headerNodes[2] !== 'undefined' && !headerNodes[1].outerHTML.match(/^<ul/) ?
+			headerNodes[1].innerHTML : undefined
+		);
+	};
+
 	return {
 		title: headerNodes[0].textContent,
-		subtitle: (
-			typeof headerNodes[2] !== 'undefined' && !headerNodes[1].outerHTML.match(/^<ul/) ?
-				headerNodes[1].innerHTML : undefined
-		),
+		subtitle: getTitleAdjacentNodeNotUl(),
 		...metaData,
 		excerpt: (
 			!headerNodes.slice(-1)[0].outerHTML.match(/^<ul/) ?
-				headerNodes.slice(-1)[0].innerHTML : undefined
+				headerNodes.slice(-1)[0].innerHTML : getTitleAdjacentNodeNotUl()
 		),
-		body: fullHtml,
+		body: bodyNodes.map(node => node.outerHTML).join(),
 	};
 };
 
